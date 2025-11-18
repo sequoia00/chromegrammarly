@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Grammar Glow",
+  "version": "0.1.0",
+  "description": "Send page text to a FastAPI service for grammar-aware highlighting and inject the result back into the page.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://0.0.0.0:12012/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Grammar Glow"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

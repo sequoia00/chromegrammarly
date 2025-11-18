@@ -1,0 +1,69 @@
+.grammar-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 220px;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+  background: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  z-index: 2147483647;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.grammar-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.grammar-panel__title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #0f172a;
+}
+
+.grammar-panel__close {
+  background: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.grammar-panel button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.grammar-panel button:hover {
+  background: #1d4ed8;
+}
+
+.grammar-panel__status {
+  min-height: 16px;
+  font-size: 11px;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.grammar-panel__status.error {
+  color: #dc2626;
+}
+
+.grammar-panel__status.success {
+  color: #0a8754;
+}
