@@ -33,6 +33,7 @@ uvicorn mainnltk:app --host 0.0.0.0 --port 12012 --reload
 2. 选择“加载已解压的扩展程序”，指向 `extension/` 目录。
 3. 在插件配置中填写后端接口地址（默认 `http://localhost:12012/analyze`），即可发送文本并查看高亮。
 
+<img width="931" height="559" alt="image" src="https://github.com/user-attachments/assets/85f57808-d8dd-4215-b56c-86acbbd20b9a" />
 
 ## 推荐内容
 本项目非大模型应用，但是利用Codex+gpt5进行了辅助的vibe coding。
